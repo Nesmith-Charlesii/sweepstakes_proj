@@ -11,5 +11,6 @@ if __name__ == '__main__':
         sweepstake.register_contestant(contestant_2)
 
         print(sweepstake.contestant_list)
+        print(sweepstake.pick_winner())
 
     run_simulation()

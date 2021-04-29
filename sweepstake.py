@@ -1,4 +1,5 @@
 from contestant import Contestant
+import random
 
 
 class Sweepstake:
@@ -15,7 +16,10 @@ class Sweepstake:
         self.contestant_list.append(contestant_dictionary)
 
     def pick_winner(self):
-        
+        rand = random.randrange(0, len(self.contestant_list))
+        winner = self.contestant_list[rand]
+
+        return f"\nSweepstake winner: {winner['first name']} {winner['last name']}"
 
     def print_contestant_info(self, contestant):
         print(
