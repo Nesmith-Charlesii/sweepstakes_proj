@@ -8,8 +8,8 @@ class Sweepstakes_stack_manager:
 
     def insert_sweepstakes(self, sweepstakes):
         self.stack.push(sweepstakes)
-        print(self.stack.stack)
+        print(f"stack: {self.stack.stack}")
 
     def get_sweepstakes(self):
         self.stack.pop()
-        print(self.stack.stack)
+        print(f"stack: {self.stack.stack}")

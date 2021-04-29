@@ -17,5 +17,6 @@ if __name__ == '__main__':
         sweepstake.print_contestant_info(contestant_2)
         sweepstake.print_contestant_list()
         sweepstake.pick_winner()
+        market_firm.manager.get_sweepstakes()
 
     run_simulation()
