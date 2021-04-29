@@ -10,7 +10,8 @@ if __name__ == '__main__':
         sweepstake.register_contestant(contestant_1)
         sweepstake.register_contestant(contestant_2)
 
-        print(sweepstake.contestant_list)
-        print(sweepstake.pick_winner())
+        sweepstake.print_contestant_list()
+        sweepstake.pick_winner()
+        sweepstake.print_contestant_info(contestant_1)
 
     run_simulation()
