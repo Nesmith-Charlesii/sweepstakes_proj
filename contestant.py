@@ -1,9 +1,21 @@
+import random
+
+
 class Contestant:
-    def __init__(self, first_name, last_name, email, registration_number):
-        self.first_name = first_name
-        self.last_name = last_name
-        self.email_address = email
-        self.registration_number = registration_number
+    def __init__(self):
+        self.first_name = str
+        self.last_name = str
+        self.email_address = str
+        self.registration_number = int
+
+        # prompt user for contestant info
+        self.first_name = input("\nFirst Name: ")
+        self.last_name = input("Last Name: ")
+        self.email_address = input("Email Address: ")
+        rand = random.randrange(1, 100)
+        self.registration_number = rand
+        print(
+            f"contestant info:\n\tfirst name: {self.first_name}\n\tlast name: {self.last_name}\n\temail address: {self.email_address}\n\tregistration number: {self.registration_number}")
 
     def notify(self, is_winner):
         pass

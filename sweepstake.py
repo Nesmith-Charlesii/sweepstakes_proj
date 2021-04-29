@@ -7,7 +7,7 @@ class Sweepstake:
         self.contestants = {}
 
     def register_contestant(self, contestant):
-        pass
+
 
     def pick_winner(self):
         # returns contestant object
