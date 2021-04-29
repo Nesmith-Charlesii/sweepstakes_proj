@@ -7,8 +7,10 @@ class Sweepstakes_stack_manager:
         self.stack = Stack()
 
     def insert_sweepstakes(self, sweepstakes):
+        # insert into the stack with push method
         pass
 
     def get_sweepstakes(self):
+        # retrieve from the stack with pop method
         # return Sweepstake object
         pass

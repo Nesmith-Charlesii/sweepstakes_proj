@@ -1,4 +1,3 @@
-from contestant import Contestant
 import random
 
 
@@ -8,6 +7,7 @@ class Sweepstake:
         self.contestant_list = []
 
     def register_contestant(self, contestant):
+        # create dictionary literal to create new dictionaries with each new contestant
         contestant_dictionary = {"first name": contestant.first_name,
                                  "last name": contestant.last_name,
                                  "email": contestant.email_address,
@@ -16,9 +16,6 @@ class Sweepstake:
         self.contestant_list.append(contestant_dictionary)
 
         rand = random.randrange(0, len(self.contestant_list))
-        for val in self.contestant_list:
-            if contestant_dictionary['registration number'] == val['registration number']:
-                contestant_dictionary["registration number"] = rand
 
     def pick_winner(self):
         rand = random.randrange(0, len(self.contestant_list))
@@ -32,4 +29,4 @@ class Sweepstake:
             f"contestant info:\n\tfirst name: {contestant.first_name}\n\tlast name: {contestant.last_name}\n\temail: {contestant.email_address}\n\tregistration number: {contestant.registration_number}")
 
     def print_contestant_list(self):
-        print(f"\nContestants in sweepstake:\n\t{self.contestant_list}")
+        print(f"\nContestants in {self.name} sweepstake:\n\t{self.contestant_list}")
