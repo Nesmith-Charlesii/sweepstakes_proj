@@ -2,9 +2,10 @@ from sweepstake import Sweepstake
 
 
 class Marketing_firm:
-    def __init__(self, manager_type):
+    def __init__(self, manager):
         self.manager_first_name = input("\nmanager first name: ")
         self.manager_last_name = input("manager last name: ")
+        self.manager = manager
 
         print(f"marketing manager: {self.manager_first_name} {self.manager_last_name}")
 

@@ -4,8 +4,10 @@ from marketing_firm_creator import Marketing_firm_creator
 
 if __name__ == '__main__':
     def run_simulation():
-        market_firm_creator = Marketing_firm_creator.choose_manager_type()
-        sweepstake = market_firm_creator.create_sweepstakes()
+        market_firm = Marketing_firm_creator.choose_manager_type()
+        sweepstake = market_firm.create_sweepstakes()
+        market_firm.manager.insert_sweepstakes(sweepstake.name)
+
         contestant_1 = Contestant()
         contestant_2 = Contestant()
 
