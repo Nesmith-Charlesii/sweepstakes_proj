@@ -15,6 +15,11 @@ class Sweepstake:
 
         self.contestant_list.append(contestant_dictionary)
 
+        rand = random.randrange(0, len(self.contestant_list))
+        for val in self.contestant_list:
+            if contestant_dictionary['registration number'] == val['registration number']:
+                contestant_dictionary["registration number"] = rand
+
     def pick_winner(self):
         rand = random.randrange(0, len(self.contestant_list))
         winner = self.contestant_list[rand]
