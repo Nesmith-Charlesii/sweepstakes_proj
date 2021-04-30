@@ -18,9 +18,7 @@ class Sweepstake:
     def pick_winner(self):
         rand = random.randrange(0, len(self.contestant_list))
         winner = self.contestant_list[rand]
-
-        print(f"\nSweepstake winner: {winner['first name']} {winner['last name']}\n")
-        # return f"\nSweepstake winner: {winner['first name']} {winner['last name']}"
+        print(f"\nSweepstake winner: {winner['first name']} {winner['last name']}")
 
     def print_contestant_info(self, contestant):
         print(
