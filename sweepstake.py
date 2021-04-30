@@ -28,3 +28,8 @@ class Sweepstake:
 
     def print_contestant_list(self):
         print(f"\nContestants in {self.name} sweepstake:\n\t{self.contestant_list}")
+
+    def notify_contestants(self, message):
+        for contestant in self.contestant_list:
+            contestant.notify(message)
+

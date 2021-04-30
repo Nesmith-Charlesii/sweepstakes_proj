@@ -7,4 +7,5 @@ class Stack:
         self.stack.append(item)
 
     def pop(self):
+        # stack is last in, first out
         return self.stack.pop(-1)

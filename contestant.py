@@ -19,4 +19,4 @@ class Contestant:
             f"contestant info confirmation:\n\tfirst name: {self.first_name}\n\tlast name: {self.last_name}\n\temail address: {self.email_address}\n\tregistration number: {self.registration_number}")
 
     def notify(self, is_winner):
-        pass
+        print(f"Congratulations {is_winner.first_name} {is_winner.last_name}!")
