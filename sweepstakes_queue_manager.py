@@ -8,8 +8,8 @@ class Sweepstake_queue_manager:
 
     def insert_sweepstakes(self, sweepstakes):
         self.queue.enqueue(sweepstakes)
-        print(f"queue: {self.queue.queue}")
+        print(f"\nqueue: {self.queue.queue}")
 
     def get_sweepstakes(self):
         self.queue.dequeue()
-        print(f"queue: {self.queue.queue}")
+        print(f"\nqueue: {self.queue.queue}")
